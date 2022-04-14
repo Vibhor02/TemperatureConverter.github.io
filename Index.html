@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEMPERATURE CONVERTER </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" >
+    <link rel="stylesheet" href="Style.css">
+    
+</head>
+
+<body>
+     <nav>
+    <div class="logo" ><h1>Temperature Converter</h1></div>
+    </nav>
+    <form class="inputSection" id="tempCalc" onsubmit="calculateTemp();">
+        <h4 class="head">Enter Temperature</h4>
+        <lable for="degree" >Degrees</lable><br>
+        <input type="number" name="temp" id="temp" placeholder="0"><br /><br/>
+        <lable for="Type">Type</lable><br>
+        <select name="type" id="type" >
+            <option value="cel">&deg;Celsius</option>
+            <option value="feh">&deg;Fahrenheit</option>
+            </select><br><br>
+            <div>
+            <input type="Submit" name="temp" value="Convert"><br />
+            <p id="result1"></p>
+        </div>           
+       
+    </form>
+      <script  src="Script.js"></script>
+    
+</body>
+</html>
